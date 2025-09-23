@@ -1,0 +1,174 @@
+/* Global Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: #E0E1E9; /* Ghost White */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #444; /* Darker text color for readability */
+}
+
+/* Header and Navigation */
+header {
+    height: 110px;
+    width: 100%;
+    background-color: #F0DBEC; /* A shade of your chosen palette */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+header h1 {
+    font-size: 2.5em; /* Larger, more elegant heading */
+    font-weight: bold;
+    color: #444;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav a {
+    text-decoration: none; /* Removes underline from nav links */
+    color: #444;
+    font-weight: bold;
+}
+header img {
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #FFB8D1, /* Lavender Pink */
+        #DDFDFE  /* Light Cyan */
+    );
+}
+.hero-section h1 {
+    font-size: 3em; /* Larger hero heading for visual impact */
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #E4B4C2; /* Orchid Pink */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #E7CEE3; /* Thistle on hover */
+}
+
+/* General Section Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+section {
+    padding: 60px 0; /* Consistent spacing for all sections */
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#shop-section h3 {
+    text-align: center;
+}
+.image-row {
+    display: flex;
+    gap: 20px; /* space between images */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-row img {
+    width: 200px;  /* adjust to fit your layout */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+#contact-section form input,
+#contact-section form textarea,
+#contact-section form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ensures fields take full width */
+}
+#contact-section form button {
+    background-color: #E4B4C2;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+#contact-section form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#contact-section form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    background-color: #F0DBEC;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: #444;
+    margin: 0 10px;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #FFB8D1;
+}
