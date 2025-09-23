@@ -8,43 +8,65 @@
 </head>
 <body>
     <header>
-        <img src="C:\wamp\www\td\.vscode\Gemini_Generated_Image_tz58jtz58jtz58jt.png" alt="Celestial Glow">
+        <a href="#home">
+            <img src="logo.png" alt="Celestial Glow - Boutique">
+        </a>
         <h1>Celestial Glow</h1>
-
-        <nav >Home</nav>
-        <nav>Shop</nav>
-        <nav>About</nav>
-        <nav>Contact</nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#shop-section">Shop</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="hero-section">
-        <h3>Handcrafted Goods, Made with Love.</h3>
-        <p>Discover our unique collection of sustainable and ethically sourced items.</p>
-        <button>Explore the Collection</button>
-    </section>
-    <section id="about-section">
-        <h2>Our Philosophy</h2>
-        <p>At our boutique, we believe true elegance lies in authenticity. Our collection is a curated journey of discovery, bringing you unique pieces crafted with care and a commitment to sustainable living. We're passionate about creating beauty that doesn't compromise on our values, ensuring every item tells a story of mindful creation.</p>
-    </section>
-    <section id="shop-section">
-        <h2>Curated for You</h2>
-        <h3>Explore Our Latest Arrivals</h3>
-    </section>
-    <section id="contact-section">
-        <h2>Get in Touch</h2>
-        <p>Have a question or just want to say hello? Send us a message, and we'll get back to you as soon as possible.</p>
-        <form>
-            <label>Full Name</label>
-            <label for="">Email</label>
-            <textarea>Message</textarea>
-            <button>Send Text</button>
-        </form>
-        
-    </section>
-</body>
-<footer>
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Handcrafted Goods, Made with Love.</h1>
+            <p>Discover our unique collection of sustainable and ethically sourced items.</p>
+            <a href="#shop-section" class="cta-button">Explore the Collection</a>
+        </section>
+        <section id="about-section">
+            <h2>Our Philosophy</h2>
+            <p>At our boutique, we believe true elegance lies in authenticity. Our collection is a curated journey of discovery, bringing you unique pieces crafted with care and a commitment to sustainable living. We're passionate about creating beauty that doesn't compromise on our values, ensuring every item tells a story of mindful creation.</p>
+        </section>
+        <section id="shop-section">
+            <h2>Curated for You</h2>
+            <h3>Explore Our Latest Arrivals</h3>
+            <div class="image-row">
+                <img src="ph1.jpg" alt="Item 1">
+                <img src="ph2.jpg" alt="Item 2">
+                <img src="ph3.jpg" alt="Item 3">
+            </div>
+        </section>
+        <section id="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Have a question or just want to say hello? Send us a message, and we'll get back to you as soon as possible.</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
     
-    <a href="">Instagram</a>
-    <a href="">Facebook</a>
-    <a href="">Twitter</a>
-</footer>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/r">Facebook</a>
+        <a href="https://x.com/">Twitter</a>
+    </footer>
+
+</body>
+
 </html>
